@@ -1,33 +1,44 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@font-face {
+  font-family: 'Starjedi';font-size: 200px;
+  src: url('Starjedi.ttf'); /* IE9 Compat Modes */
   }
+h1{
+  font-family: 'Starjedi';
+  font-weight: 100;
+
+  color:green;
+  
+  
+}
+.MainCss{
+  display:flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+@media only screen and (max-width: 500px){
+	.MainCss{
+		flex-wrap: wrap;	}
+}
+#card{
+	font-size: 11px;
+	width: 200px;
+	background-color: white ;
+
+  margin: 30px;
+  
+  box-shadow: 0px 0px 9px 4px  #6b0000 ;
+  animation: glow 1.5s linear infinite alternate;
+
+}
+@keyframes glow{
   to {
-    transform: rotate(360deg);
+    box-shadow: 0px 0px 30px 20px red;
+    background-color: red; 
   }
+}
+#planet{
+	color:white;
 }
